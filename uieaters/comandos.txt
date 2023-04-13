@@ -1,3 +1,5 @@
 1. entrar el la carpeta de la app
 2. ejecutar comando "npm start"
-3. 
+3. para llamar un componente en el root.render se usan {} o <nombre.funcion></nombre.funcion> o autocontenida <nombre.funcion/> que es la mas usada
+4. siempre debe haber un elemento que contenga a otro icluyendo funciones o componentes de react, usualmente se colocan dentro de un div
+5. las funciones o componentes deben ser escritas con la primera letra: mayuscula
