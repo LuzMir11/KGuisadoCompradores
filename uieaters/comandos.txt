@@ -3,3 +3,20 @@
 3. para llamar un componente en el root.render se usan {} o <nombre.funcion></nombre.funcion> o autocontenida <nombre.funcion/> que es la mas usada
 4. siempre debe haber un elemento que contenga a otro icluyendo funciones o componentes de react, usualmente se colocan dentro de un div
 5. las funciones o componentes deben ser escritas con la primera letra: mayuscula
+
+-------------------------------------------------------------------------------------------------
+Fuentes: Google fonts
+Poppins medium 500
+nunito light 300
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    font-family: 'Nunito', sans-serif;
+
+    font-family: 'Poppins', sans-serif;
+
+
+
+--------------------------------------------------------------------------------------------------
