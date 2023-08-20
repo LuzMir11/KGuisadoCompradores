@@ -1,0 +1,22 @@
+[
+  {
+        "idPlatillos": 1,
+        "Platillo": "Chilaquiles",
+        "Descripcion": "Rojos / verdes",
+        "Imagen": "./img/1.png",
+        "Horarios": "18/04/2023",
+        "Costos": "25",
+        "Direccion": "calle de la discordia",
+        "Calificacion": "5" 
+  },
+  {
+        "idPlatillos": 2,
+        "Platillo": "Chilaquiles",
+        "Descripcion": "Rojos / verdes",
+        "Imagen": "./img/1.png",
+        "Horarios": "18/04/2023",
+        "Costos": "25",
+        "Direccion": "calle de la discordia",
+        "Calificacion": "5" 
+  }  
+]
