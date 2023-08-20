@@ -1,0 +1,7 @@
+.boxPlatillos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+}

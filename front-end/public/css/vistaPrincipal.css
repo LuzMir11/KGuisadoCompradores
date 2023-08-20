@@ -1,0 +1,99 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.titleless{
+  word-wrap: break-word;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 40px;
+}
+
+.parrafou{
+  word-wrap: break-word;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+
+.textinp {
+  color: black;
+}
+
+.textpar {
+ color: white;
+}
+
+.contaline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contimginp{
+  flex: 1;
+  height: 100%;
+  padding: 5%;
+}
+
+.contimgpar{
+  flex: 1;
+  height: 100%;
+  padding: 5%;
+}
+
+.contartpar{
+  background-color: #f3ac03;
+}
+
+.conttextinp{
+  flex: 1;
+  height: 100%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conttextpar{
+  flex: 1;
+  height: 100%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgrecept{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.contbuton{
+  margin: 5%;
+}
+
+.butoninp {
+  padding: 10px 20px;
+  background-color: #f3ac03;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.butonpar{
+  padding: 10px 20px;
+  background-color: white;
+  color: #f3ac03;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+}
