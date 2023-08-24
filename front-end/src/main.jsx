@@ -10,6 +10,8 @@ import {
 import { Main } from './componetns/Main';
 import {Platillos} from './componetns/Platillos';
 import { Registrarse } from './componetns/Registrarse';
+import {InicioSesion} from './componetns/InicioSesion'
+import { VistaPlatillo } from './componetns/platillos/VistaPlatillo';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,6 +26,12 @@ const router = createBrowserRouter([
     element: <Registrarse/>
   },
   {
+    path:'/login',
+    element:<InicioSesion/>
+  },
+  {
+    path:'/platillo/:id',
+    element:<VistaPlatillo/>
   }
 ]);
 

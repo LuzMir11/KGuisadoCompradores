@@ -5,20 +5,28 @@
     text-decoration: none;
     box-sizing: border-box;
   }
-  
+ .upsign {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ } 
   .continsign{
+    
     background-color: white;
     /*border-radius: 18px; */
     border: 4px solid #f3ac03;
-    width: 400px;
-    height: 640px;
+    width: 70%;
+    
     padding: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   
   .titlecont{
-    flex: 1;
+    display: flex;
+    justify-content: center;
   }
   
   .titletext{
@@ -27,17 +35,17 @@
     font-size: 30px;
   }
   
-  .infocont{
-    flex: 1;
+  .infocont{ 
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     height: 100%;
+    justify-content: center;
+    align-items: center;
   }
-  
-  .info4cont{
-    flex: 1;
-  }
+ 
+ .infocont > div {
+  padding: 30px;
+ } 
   
   .infotext{
     word-wrap: break-word;
@@ -74,3 +82,4 @@
     font-size: 16px;
     color: grey;
   }
+

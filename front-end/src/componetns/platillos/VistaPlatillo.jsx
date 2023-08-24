@@ -1,25 +1,25 @@
-import React from 'react';
-import axios from 'axios';
-import '../../public/css/platilloCard.css'
+import React from "react";
+import "../../../public/css/boxPlatillos.css"
+import {CardPlatillo} from "../CardPlatillo"
+import {Header} from "../Header"
+export function VistaPlatillo ( ){
 
-export function CardPlatillo() {
-  const baseURL = 'http://localhost:3000/api/platillos'
-  const [platillos, setPlatillo] = React.useState(null);
-  React.useEffect( () => {
-    //const token = localStorage.getItem('x-access-token')
-     axios.get(baseURL).then( (response) => {
-     setPlatillo(response.data);
-     console.log(response)
+    const [platillos, setPlatillo] = React.useState(null);
+    React.useEffect( () => {
+        const token = localStorage.getItem('x-access-token')
+        axios.get(baseURL,{headers:{"x-access-token":token}}).then( (response) => {
+        setPlatillo(response.data);
+        console.log(response)
 
-    });
-  }, []);
-
-  if (!platillos) return null;
-  const cardsPlatillos = platillos.map( platillo => (
-    <div className="postin">
+        });
+    }, []);
+    return (
+        <div className="boxPlatillos">
+            <Header/>
+            <div className="postin">
     
     <div className='contmain'>
-      <a href="" className='hiperv'>
+      <a href='/platillo' className='hiperv'>
         <div className='imgcont'>
           <img src={platillo.Imagen} alt="plato de comida" className='imag'/>
         </div>
@@ -42,12 +42,7 @@ export function CardPlatillo() {
         </div>
       </a>
      </div>
-    </div>
-  ))
- 
-  
-  return <>{cardsPlatillos}</>;
-  
-
-  
+    </div> 
+        </div>
+    )
 }
