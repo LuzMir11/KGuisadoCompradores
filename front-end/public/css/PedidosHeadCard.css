@@ -1,0 +1,55 @@
+.PedidosHeadCard-form-titletext{
+  font-family: 'Poppins', sans-serif;
+  color:#f3ac03;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.PedidosHeadCard{
+    background-color: #f3ac03;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 500px;
+    border-radius: 10px;
+    border: solid 2px #f3ac03;
+}
+
+.PedidosHeadCard-1{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.PedidosHeadCard-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start ;
+}
+.PedidosHeadCard-NumP{
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+}
+
+.PedidosHeadCard-infoPedido{
+   font-family: 'Poppins', sans-serif;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding-left:10px ;
+}
+
+.PedidosHeadCard-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

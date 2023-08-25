@@ -30,7 +30,7 @@ export function VistaPrincipal() {
             <h1 className='titleless textpar'>¿Eres un buen cocinero?</h1>
             <p className='parrafou textpar'> Únete a nuestro grupo de chefs y comienza a ofrecer tu deliciosa comida.</p>
             <div className='contbuton'>
-              <button class="butonpar">¡Quiero vender!</button>
+              <a class="butonpar" href="/pedidos">¡Quiero vender!</a>
             </div>
           </div>
           <div className='contimgpar'>
@@ -50,7 +50,7 @@ export function VistaPrincipal() {
             <h1 className='titleless textinp'>¿Tienes bici o moto?</h1>
             <p className='parrafou textinp'> Usa tu tiempo libre para ganar dinero con nosotros.</p>
             <div className='contbuton'>
-              <a class="butoninp">¡Quiero repartir!</a>
+              <a class="butoninp" href='/repartir'>¡Quiero repartir!</a>
             </div>
           </div>
         </div>

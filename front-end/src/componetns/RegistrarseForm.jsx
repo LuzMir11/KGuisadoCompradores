@@ -18,13 +18,14 @@ export function RegistrarseForm() {
   
   let userData = {}
   let sendData = async (userData)=>{
-    const res = await axios.post(linkApi, userData)
-    localStorage.setItem('x-access-token', res.data.token); 
+   // const res = await axios.post(linkApi, userData)
+    //localStorage.setItem('x-access-token', res.data.token); 
     window.location.href="/"
   }
 const onSubmit = handleSubmit((data)=>{
         userData = data
-        sendData(data) 
+        console.log(userData)
+        //sendData(data) 
       })
   return <div className="upsign">
     
@@ -99,7 +100,7 @@ const onSubmit = handleSubmit((data)=>{
         </div>
 
         <div className='info4cont infoin'>
-          <input type="email" className='inttext' placeholder=" MarcoJc02 " 
+          <input type="password" className='inttext' placeholder=" MarcoJc02 " 
           {...register("Contrasena")}
           />
         </div>
@@ -109,9 +110,11 @@ const onSubmit = handleSubmit((data)=>{
         </div>
 
         <div className='info4cont infoin'>
-          <input type="email" className='inttext' placeholder=" MarcoJc02 " 
-          {...register("Contrasena")}
-          />
+          <select  {...register("Rol_idRol")}>
+              <option value="1">Comprador</option>
+              <option value="2">Proveedor</option>
+              <option value="3">Repartidor</option>
+          </select>
         </div>
 {/* 
         <div className='info4cont infotextcont'>

@@ -15,10 +15,10 @@ export function Header() {
           <label htmlFor="check" className="checkbtn">
           </label>
         <ul>
-          <li><a href='/'>información</a></li>
-          <li><a href='/'>nosotros</a></li>
+        
           <li><a href='/signin'>¡Comencemos!</a></li>
           <li><a href='/login'>Iniciar session</a></li>
+          
         </ul>
       </nav>
 
