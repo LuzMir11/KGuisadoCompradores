@@ -2,9 +2,9 @@ import React from 'react';
 import '../../public/css/registrarse.css'
 import {useForm} from 'react-hook-form'
 import axios  from 'axios';
-export function RegistrarseForm() {
-  const {register,  handleSubmit} = useForm()
-  let linkApi ="http://localhost:3000/api/usuaros"
+export function RegistrarseForm(linkApi) {
+ const {register,  handleSubmit} = useForm()
+  console.log(linkApi) 
   let state ={
     PrimerNombre: "" ,
     SegundoNombre: "",
@@ -18,14 +18,15 @@ export function RegistrarseForm() {
   
   let userData = {}
   let sendData = async (userData)=>{
-   // const res = await axios.post(linkApi, userData)
-    //localStorage.setItem('x-access-token', res.data.token); 
+    console.log(linkApi)
+    const res = await axios.post(linkApi, userData)
+    localStorage.setItem('x-access-token', res.data.token); 
     window.location.href="/"
   }
 const onSubmit = handleSubmit((data)=>{
         userData = data
         console.log(userData)
-        //sendData(data) 
+        sendData(data) 
       })
   return <div className="upsign">
     
