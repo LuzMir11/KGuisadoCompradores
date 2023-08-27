@@ -6,6 +6,7 @@ export  function Main(){
     return(
         <div>
             <Header/>
+            <h1>Hola soy David</h1>
             <VistaPrincipal/>
         </div>
     )
