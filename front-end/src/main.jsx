@@ -33,7 +33,7 @@ const router = createBrowserRouter([
     element: <Platillos/>
   },
   {
-    path:'/platillo/:id',
+    path:'/platillo/vista/:id',
     element:<VistaPlatillo/>
   },
   //Rutas de pedidos
@@ -42,7 +42,7 @@ const router = createBrowserRouter([
     element: <Pedidos/>
   },
   {
-    path:'/pedido/:id',
+    path:'/pedido/nuevo/:id',
     element:<></>
   },{
     path:'/repartir/',

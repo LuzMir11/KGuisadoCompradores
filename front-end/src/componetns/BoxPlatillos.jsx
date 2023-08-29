@@ -10,7 +10,7 @@ export function BoxPlatillos ( ){
     //const token = localStorage.getItem('x-access-token')
      axios.get(baseURL).then( (response) => {
      setPlatillo(response.data);
-     console.log(response)
+     console.log(response.data)
 
     });
   }, []);

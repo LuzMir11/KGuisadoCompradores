@@ -3,13 +3,13 @@ import '../../public/css/platilloCard.css'
 
 export function CardPlatillo({platillos}) {
 
-
+  console.log(platillos)
   if (!platillos) return null;
   const cardsPlatillos = platillos.map( platillo => (
     <div className="postin">
     
     <div className='contmain'>
-      <a href="" className='hiperv'>
+      <a href={"/platillo/vista/"+platillo.idPlatillos}  className='hiperv'>
         <div className='imgcont'>
           <img src={platillo.Imagen} alt="plato de comida" className='imag'/>
         </div>
