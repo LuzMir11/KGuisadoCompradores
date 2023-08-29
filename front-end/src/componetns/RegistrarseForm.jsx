@@ -3,7 +3,7 @@ import '../../public/css/registrarse.css'
 import {useForm} from 'react-hook-form'
 import axios  from 'axios';
 export function RegistrarseForm(linkApi) {
- const {register,  handleSubmit} = useForm()
+ const {register,  handleSubmit, formState:{errors}} = useForm()
   console.log(linkApi) 
   let state ={
     PrimerNombre: "" ,
@@ -43,18 +43,38 @@ const onSubmit = handleSubmit((data)=>{
 
         <div className='info4cont infoin'>
           <input type="text" id="fstname" className='inttext' name="PrimerNombre" placeholder=" Ej. Marco"
-            {...register("Nombre")}/>
+            {...register("Nombre",{
+              required: {
+                value: true,
+                message:"El nombre es requerido"
+              }
+            })}
+            />
+            
         </div>
-
+        <div className='info4cont infoin'>
+            {
+            errors.Nombre && <span>{errors.Nombre.message}</span>
+            }
+            </div>
         <div className='info4cont infotextcont'>
           <h3 className='infotext emailtext'>Appellido</h3>
         </div>
 
         <div className='info4cont infoin'>
           <input type="text" id="sndname" className='inttext' name="Segundo Nombre" placeholder=" Ej. Filigonio" 
-          {...register("Apellido")}/>
+          {...register("Apellido",{
+            required: {
+              value: true,
+              message:"El apellido es requerido"
+            }
+          })}/>          
         </div>
-        
+        <div className='info4cont infoin'>
+          {
+          errors.Apellido && <span>{errors.Apellido.message}</span>
+          }
+        </div>
 
         <div className='info4cont infotextcont'>
           <h3 className='infotext emailtext'>Direccion</h3>
@@ -63,8 +83,19 @@ const onSubmit = handleSubmit((data)=>{
         <div className='info4cont infoin'>
           <input type="text" id="fstlstname" className='inttext' name="fstlstname" placeholder=" Ej. Av del trabajo" 
           
-          {...register("Direccion")}/>
-
+          {...register("Direccion",{
+            required: {
+              value: true,
+              message:"La direccion es requerida"
+            }
+          })}
+          />
+          
+          </div>
+        <div className='info4cont infoin'>
+          {
+          errors.Direccion && <span>{errors.Direccion.message}</span>
+          }
         </div>
 
         <div className='info4cont infotextcont'>
@@ -73,7 +104,19 @@ const onSubmit = handleSubmit((data)=>{
 
         <div className='info4cont infoin'>
           <input type="text" id="sndlstname" className='inttext' name="sndlstname" placeholder=" Ej. Tlamaco" 
-          />
+          {...register("Colonia",{
+            required: {
+              value: true,
+              message:"La colonia es requerida"
+            }
+          })}
+          />          
+        </div>
+
+        <div className='info4cont infoin'>
+        {
+          errors.Colonia && <span>{errors.Colonia.message}</span>
+          }
         </div>
 </div>
 <div  className=''>
@@ -83,8 +126,24 @@ const onSubmit = handleSubmit((data)=>{
 
         <div className='info4cont infoin'>
           <input type="text" id="adreses" className='inttext' name="adreses" placeholder=" 7754886452 "
-          {...register("NumeroTelefono")} />
-            
+          {...register("NumeroTelefono",{
+            required: {
+              value: true,
+              message:"El numero de telefono es requerido"
+            },
+            pattern:{
+              value: /^[0-9]{10}$/,
+              message: "Numero de telefono invalido"
+            }
+          })}
+          />
+                      
+        </div>
+
+        <div className='info4cont infoin'>
+        {
+          errors.NumeroTelefono && <span>{errors.NumeroTelefono.message}</span>
+          }
         </div>
 
         <div className='info4cont infotextcont'>
@@ -93,7 +152,20 @@ const onSubmit = handleSubmit((data)=>{
 
         <div className='info4cont infoin'>
           <input type="text" id="phonenum" className='inttext' name="phonenum inttext" placeholder=" La langosta" 
-          {...register("NombreUsuario")}/>
+          {...register("NombreUsuario",{
+            required: {
+              value: true,
+              message:"El nombre de usuario es requerido"
+            }
+          })}
+          />
+          
+        </div>
+
+        <div className='info4cont infoin'>
+        {
+          errors.NombreUsuario && <span>{errors.NombreUsuario.message}</span>
+          }
         </div>
 
         <div className='info4cont infotextcont'>
@@ -102,9 +174,22 @@ const onSubmit = handleSubmit((data)=>{
 
         <div className='info4cont infoin'>
           <input type="password" className='inttext' placeholder=" MarcoJc02 " 
-          {...register("Contrasena")}
+          {...register("Contrasena",{
+            required: {
+              value: true,
+              message:"La contrseña es requerida"
+            },
+            pattern:{
+              value: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{8,}$/,
+              message: "La contraseña debe de contener\n8 caracteres\n°Una mayuscula\n°Un numero\n|"
+            }
+          })}
           />
-        </div>
+          </div>
+
+          <div className='info4cont infoin'>
+          {errors.Contrasena && <span>{errors.Contrasena.message}</span>}
+          </div>
 
         <div className='info4cont infotextcont'>
           <h3 className='infotext emailtext'>Que quieres ser ?</h3>
