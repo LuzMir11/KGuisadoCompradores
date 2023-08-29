@@ -82,4 +82,7 @@
     font-size: 16px;
     color: grey;
   }
-
+  span{
+    text-align: left;
+    color: tomato;
+  }
