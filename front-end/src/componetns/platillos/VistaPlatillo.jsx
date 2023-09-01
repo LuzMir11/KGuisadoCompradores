@@ -3,7 +3,7 @@ import "../../../public/css/boxPlatillos.css"
 import {CardPlatillo} from "../CardPlatillo"
 import {Header} from "../Header"
 import axios from "axios";
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import {header} from '../../utils/heders'
 
 export function VistaPlatillo ( ){
@@ -27,7 +27,10 @@ export function VistaPlatillo ( ){
     return (
         <div className="boxPlatillos">
             <Header/>
-            <CardPlatillo platillos={platillo}/>
+            <CardPlatillo platillos={platillo} />
+            <div className="">
+              <Link to={"pedido/nuevo/"+a.id} >Comprar</Link>
+            </div>
         </div> 
     )
 }

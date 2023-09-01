@@ -17,6 +17,7 @@ export function BoxPlatillos ( ){
     return (
         <div className="boxPlatillos">
             <CardPlatillo platillos = {platillos}/>
+
         </div>
     )
 }

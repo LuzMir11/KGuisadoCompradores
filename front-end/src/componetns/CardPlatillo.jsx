@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../public/css/platilloCard.css'
 
 export function CardPlatillo({platillos}) {
 
+  
   console.log(platillos)
   if (!platillos) return null;
   const cardsPlatillos = platillos.map( platillo => (
