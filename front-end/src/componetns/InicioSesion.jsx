@@ -31,14 +31,36 @@ const onSubmit = handleSubmit((data)=>{
             <h3 className='infotext emailtext'>Nombre de usuario:</h3>
           </div>
           <div className='info4cont infoin emailcont'>
-            <input type="text" className='NombreUsuario' placeholder="  MarcoJc02" {...register("NombreUsuario")}/>
+            <input type="text" className='NombreUsuario' placeholder="  MarcoJc02" {...register("NombreUsuario",{
+            required: {
+              value: true,
+              message:"El nombre de usuario es requerido"
+            },
+            minLength:{
+              value: 5,
+              message: "El nombre de usuario debe contener almenos 5 caracteres"
+            },
+            maxLength:{
+              value: 8,
+              message: "El nombre de usuario no debe contener mas de 8 caracteres"
+            }
+          })}/>
           </div>
           <div className='info4cont infotextcont'>
             <h3 className='infotext paswtext'>Contraseña:</h3>
           </div>
           <div className='info4cont infoin paswpcont'>
             <input type="password" className='Contrasena' placeholder="  Introduce tu contraseña"
-            {...register("Contrasena")} />
+            {...register("Contrasena",{
+              required: {
+                value: true,
+                message:"La contrseña es requerida"
+              },
+              pattern:{
+                value: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{8,}$/,
+                message: "La contraseña debe de contener\n8 caracteres\n°Una mayuscula\n°Un numero\n|"
+              }
+            })} />
           </div>
         </div>
         <div className='butoncont'>

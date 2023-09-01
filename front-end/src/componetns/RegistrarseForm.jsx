@@ -156,6 +156,14 @@ const onSubmit = handleSubmit((data)=>{
             required: {
               value: true,
               message:"El nombre de usuario es requerido"
+            },
+            minLength:{
+              value: 5,
+              message: "El nombre de usuario debe contener almenos 5 caracteres"
+            },
+            maxLength:{
+              value: 8,
+              message: "El nombre de usuario no debe contener mas de 8 caracteres"
             }
           })}
           />
