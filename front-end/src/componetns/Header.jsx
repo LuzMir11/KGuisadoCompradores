@@ -18,6 +18,7 @@ export function Header() {
         
           <li><a href='/signin'>¡Comencemos!</a></li>
           <li><a href='/login'>Iniciar session</a></li>
+          <li><a href='/SocialPage'>SocialPage</a></li>
           
         </ul>
       </nav>
