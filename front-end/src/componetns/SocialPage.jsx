@@ -53,7 +53,7 @@ export function SocialPage() {
             amas de casa</p>
           </div>
           <div className='contimgpar'>
-            <img src="assets/gente.png" alt="imagen de personas" className='imgrecept'/>
+            <img src="assets/SocialP1.png" alt="imagen de personas" className='imgrecept'/>
           </div>
         </div>
       </article>
@@ -79,7 +79,7 @@ export function SocialPage() {
         <div className='contaline'>
 
           <div className='contimginpar'>
-            <img src="assets/baner_inferior.png" alt="imagen de personas" className='imgrecept'/>
+            <img src="assets/SocialPH.png" alt="imagen de personas" className='imgrecept'/>
           </div>
         </div>
       </article>
