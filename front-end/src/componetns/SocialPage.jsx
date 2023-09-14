@@ -9,41 +9,51 @@ export function SocialPage() {
 <div>
       <article className='contart contartinp'>
         <div className='contaline'>
-        <div className='contimginp'>
-          <h1 className='titleless textinp'> kguisado </h1>
-          <p className='parrafou textinp'> Para que tus bebidas favoritas lleguen hasta donde tú estas, contamos con 67 plantas embotelladoras, 
-          350 centros de distribución y  más 13 mil rutas de reparto que conforman a la Industria Mexicana de Coca-Cola, con los que atendemos a más de 1.3 millones de clientes.</p>
+          <div className='contimgpar'>
+            <img src="assets/baner_superior.png"alt="Imagen baner" className='imagenbaener'/>
           </div>
-          </div>
-          
+        </div>
       </article>
 </div>
 
 <div>
-      <article className='contart contartinp'>
-        <div className='adjImage'>
-            <img src="assets/SocialP1.png" alt="imagen de comida" className='imgrecept'/>
-          </div>
-      </article>
-    </div>
-
-    <div>
-      <article className='contart contartpar'>
-        <div className='contaline'>
-          <div className='conttextpar'>
-            <h1 className='titleless textpar'>MISION</h1>
-            <p className='parrafou textpar'> Informacion de la MISION</p>
-          </div>
-        </div>
-      </article>
-    </div>
-
-    <div>
       <article className='contart contartinp'>
         <div className='contaline'>
           <div className='conttextinp'>
-            <h1 className='titleless textinp'>VISION</h1>
-            <p className='parrafou textinp'> informacion de la VISION</p>
+            <p className='parrafou textinp'> Actuar en favor de la economía de las amas de casa y los sectores vulnerables. 
+              Marcamos la diferencia en la vida de las personas que usan nuestra plataforma ofreciendo flexibilidad y buen servicio.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div>
+      <article className='contart contartinp'>
+        <div className='contaline'>
+          <div className='conttextinpar'>
+          <h3 className='titleless textinpar'>Mas que solo una plataforma</h3>
+            <p className='parrafou textinpar'> Nuestra plataforma se enfoca principalmente en el apoyo a las amas de casa y madres solteras, 
+            permientiendoles que puedan poner a la venta su comida recien prearada para ganar dinero sin afectar sus actividades diarias.
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div>
+      <article className='contart contartinp'>
+        <div className='contaline'>
+          <div className='conttextpar'>
+            <h2 className='titleless textinpar'>Este año hemos aportado</h2>
+            <h2 className='titleless textinpar'>$856 MXN</h2>
+            <p className='parrafou textinpar'> Ayudando a:
+            <br />
+            2
+            <br />
+            amas de casa</p>
+          </div>
+          <div className='contimgpar'>
+            <img src="assets/SocialP1.png" alt="imagen de personas" className='imgrecept'/>
           </div>
         </div>
       </article>
@@ -51,35 +61,29 @@ export function SocialPage() {
 
 
     <div>
-      <article className='contart contartpar'>
-        <div className='contaline'>
-          <div className='conttextpar'>
-            <h1 className='titleless textpar'>OBJETIVO</h1>
-            <p className='parrafou textpar'> Informacion del OBJETIVO</p>
-          </div>
-        </div>
-      </article>
-    </div>
-<div>
-      <article className='contart contartinp'>
-        <div className='adjImage'>
-            <img src="assets/SocialP1.png" alt="imagen de comida" className='imgrecept'/>
-          </div>
-      </article>
-    </div>
-
-
-<div>
       <article className='contart contartinp'>
         <div className='contaline'>
           <div className='conttextinpar'>
-          <p className='parrafou textinp'> parrafo 4</p>
+          <h3 className='titleless textinpar'>Ayudando a sectores vulnerables</h3>
+            <p className='parrafou textinpar'> Empleamos un modelo de repartidores fexibles para que los estudiantes y 
+                                              gente de escasos recursos puedan participar. 
+                                               Asi pueden usar su tiempo libre para generar un ingreso extra
+
+            </p>
           </div>
         </div>
       </article>
-</div>
+    </div>
+    <div>
+      <article className='contart contartinpar'>
+        <div className='contaline'>
 
-
+          <div className='contimginpar'>
+            <img src="assets/SocialPH.png" alt="imagen de personas" className='imgrecept'/>
+          </div>
+        </div>
+      </article>
+    </div>
 
   </div>
 }
