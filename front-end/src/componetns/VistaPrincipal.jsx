@@ -64,7 +64,7 @@ export function VistaPrincipal() {
             <h1 className='titleless textpar'>¡kguisado al rescate de alimentos!</h1>
             <p className='parrafou textpar'> Entérate sobre nuestro proyecto y el cambio que realizamos día a día.</p>
             <div className='contbuton'>
-              <a class="butonpar">Aprende más</a>
+              <a class="butonpar" href='/Aprendermas'>Aprende más</a>
             </div>
           </div>
           <div className='contimgpar'>

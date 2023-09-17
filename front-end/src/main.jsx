@@ -49,8 +49,9 @@ const router = createBrowserRouter([
     path:'/repartir/',
     element:<Repartir/>  
   },
+  //Paginas de información
   {
-    path:'/SocialPage',
+    path:'/Aprendermas',
     element:<SocialPage/>
   }
 ]);
