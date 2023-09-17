@@ -6,7 +6,7 @@ export  function Main(){
     return(
         <div>
             <Header/>
-            <VistaPrincipal/>
+            <VistaPrincipal/>        
         </div>
     )
 }
