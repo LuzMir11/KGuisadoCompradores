@@ -3,8 +3,15 @@ import React from 'react';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 */
 import '../../public/css/hstyle.css';
+import { InicioSesion } from './InicioSesion';
 
 export function Header() {
+  let inicioSesion
+  if(localStorage.getItem('rol')==1){
+     inicioSesion = <li><a href='/nuevo/platillo'>Nuevo platillo</a></li>
+  }else{
+     inicioSesion = <li><a href='/login'>Iniciar session</a></li>
+  }
 
   return <div className="header" >
     <a href='/' className='logotipo'>
@@ -17,8 +24,8 @@ export function Header() {
         <ul>
         
           <li><a href='/signin'>¡Comencemos!</a></li>
-          <li><a href='/login'>Iniciar session</a></li>
           
+          {inicioSesion}
         </ul>
       </nav>
 

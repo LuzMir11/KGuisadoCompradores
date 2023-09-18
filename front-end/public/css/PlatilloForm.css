@@ -1,0 +1,104 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.cont-NuevoPlatillo-form{
+  background-color: white;
+  /*border-radius: 18px; */
+  border: 4px solid #f3ac03;
+  
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.NuevoPlatillo-form{
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.NuevoPlatillo-form-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: ce;
+}
+.info4cont  > h3,input{
+  padding: 10px;
+}
+.NuevoPlatillo-form-titlecont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.NuevoPlatillo-form-titletext{
+  font-family: 'Poppins', sans-serif;
+  color:#f3ac03;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.NuevoPlatillo-form-infocont{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+.info4cont{
+  
+}
+
+.infotext{
+  word-wrap: break-word;
+  font-family: 'Nunito', sans-serif;
+  color: #f3ac03;
+  font-size: 20px;
+}
+
+.infoin{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inttext{
+  width: 260px;
+  height: 30px;
+  font-size: 14px;
+  border: 2px solid #e6e6e6; 
+}
+
+.butoncont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+}
+
+.botonround{
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  color: grey;
+}
+
+.NuevoPlatillo_parrafou{
+  word-wrap: break-word;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 15px;
+  color: #f3ac03;
+}
+

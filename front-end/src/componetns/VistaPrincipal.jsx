@@ -1,15 +1,15 @@
 import React from 'react';
-
+import { UsuariosRegistrados } from './usuario/UsuariosRegistrados';
 import '../../public/css/vistaPrincipal.css'
 
 export function VistaPrincipal() {
 
   return <div className="reception">
-
+    
     <div>
       <article className='contart contartinp'>
         <div className='contaline'>
-          <div className='contimginp'>
+          <div className='contimginp'><UsuariosRegistrados/>
             <img src="assets/comida.png" alt="imagen de comida" className='imgrecept'/>
           </div>
           <div className='conttextinp'>

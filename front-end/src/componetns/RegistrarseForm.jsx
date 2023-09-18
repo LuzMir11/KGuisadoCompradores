@@ -19,8 +19,7 @@ export function RegistrarseForm(linkApi) {
   let userData = {}
   let sendData = async (userData)=>{
     console.log(linkApi)
-    const res = await axios.post(linkApi, userData)
-    localStorage.setItem('x-access-token', res.data.token); 
+    const res = await axios.post(linkApi.link, userData)
     window.location.href="/"
   }
 const onSubmit = handleSubmit((data)=>{

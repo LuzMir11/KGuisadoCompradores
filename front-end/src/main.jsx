@@ -13,6 +13,7 @@ import {InicioSesion} from './componetns/InicioSesion'
 import { VistaPlatillo } from './componetns/platillos/VistaPlatillo';
 import { Pedidos } from './componetns/proveedor/pedidos';
 import { Repartir } from './componetns/repartidores/Repartir';
+import { NuevoPlatillo } from './componetns/platillos/NuevoPlatillo';
 const router = createBrowserRouter([
   //rutas de ususario
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path:'/platillo/vista/:id',
     element:<VistaPlatillo/>
+  },
+  {
+    path:'nuevo/platillo',
+    element: <NuevoPlatillo/> 
   },
   //Rutas de pedidos
   {
