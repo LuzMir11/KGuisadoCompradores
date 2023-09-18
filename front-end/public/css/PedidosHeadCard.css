@@ -14,8 +14,12 @@
     width: 500px;
     border-radius: 10px;
     border: solid 2px #f3ac03;
+    cursor: pointer;
 }
-
+.PedidosHeadCard:hover{
+    background-color: #f3ac03;
+    color: white;
+}
 .PedidosHeadCard-1{
     display: flex;
     align-items: center;
