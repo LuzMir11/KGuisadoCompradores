@@ -13,7 +13,11 @@ import {InicioSesion} from './componetns/InicioSesion'
 import { VistaPlatillo } from './componetns/platillos/VistaPlatillo';
 import { Pedidos } from './componetns/proveedor/pedidos';
 import { Repartir } from './componetns/repartidores/Repartir';
+<<<<<<< HEAD
 import { NuevoPlatillo } from './componetns/platillos/NuevoPlatillo';
+=======
+import { SocialPage } from './componetns/SocialPage';
+>>>>>>> main
 const router = createBrowserRouter([
   //rutas de ususario
   {
@@ -53,7 +57,10 @@ const router = createBrowserRouter([
     path:'/repartir/',
     element:<Repartir/>  
   },
+  //Paginas de información
   {
+    path:'/Aprendermas',
+    element:<SocialPage/>
   }
 ]);
 

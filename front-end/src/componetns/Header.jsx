@@ -23,6 +23,8 @@ export function Header() {
           </label>
         <ul>
         
+          <li><a href='/info'>Información</a></li>
+          <li><a href='/nosotro'>Nosotros</a></li>
           <li><a href='/signin'>¡Comencemos!</a></li>
           
           {inicioSesion}
