@@ -8,7 +8,7 @@ import {header} from '../../utils/heders'
 
 export function VistaPlatillo ( ){
   let a = useParams();
-  const baseURL = 'http://localhost:3000/api/platillos/'+a.id; 
+  const baseURL = import.meta.env.VITE_ONLINE_SERVER+'/api/platillos/'+a.id; 
     const [platillo, setPlatillo] = React.useState(null);
     const conf = {
       headers:{

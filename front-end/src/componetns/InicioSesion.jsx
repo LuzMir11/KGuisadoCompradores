@@ -5,7 +5,7 @@ import { Header } from './Header';
 import axios from 'axios';
 export function InicioSesion() {
   const { register, handleSubmit } = useForm()
-  const linkApi = import.meta.env.VITE_LOCAL_SERVER+"/api/inicio-session-usuario";
+  const linkApi = import.meta.env.VITE_ONLINE_SERVER+"/api/inicio-session-usuario";
 
   let userData = {}
   let sendData = async (userData)=>{

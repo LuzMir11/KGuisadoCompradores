@@ -11,7 +11,7 @@ export function PlatilloForm(editarplatillo){
 
   
 
-  const linkApi = import.meta.env.VITE_LOCAL_SERVER+"/api/platillos/";
+  const linkApi = import.meta.env.VITE_ONLINE_SERVER+"/api/platillos/";
 
   let userData = {}
   const handleChange = (e) => {

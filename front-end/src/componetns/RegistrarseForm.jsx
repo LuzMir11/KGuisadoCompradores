@@ -18,14 +18,16 @@ export function RegistrarseForm(linkApi) {
   
   let userData = {}
   let sendData = async (userData)=>{
-    console.log(linkApi)
+    console.log("sendData")
     const res = await axios.post(linkApi.link, userData)
+    console.log(res);
     window.location.href="/"
   }
 const onSubmit = handleSubmit((data)=>{
         userData = data
-        console.log(userData)
-        sendData(data) 
+        userData.Rol_idRol = parseInt(userData.Rol_idRol)
+        //console.log(userData)
+        sendData(userData) 
       })
   return <div className="upsign">
     
