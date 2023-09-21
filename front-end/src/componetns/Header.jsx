@@ -8,14 +8,20 @@ import { InicioSesion } from './InicioSesion';
 export function Header() {
   let inicioSesion
   if(localStorage.getItem('rol')==2){
+    //proveedores
      inicioSesion = <>
       <li><a href='/nuevo/platillo'>Nuevo platillo</a></li>
       <li><a href='/lista/platillos'>Mis Platillos</a></li>
+      <li><a href='/comprador/pedidos'>Mis pedidos</a></li>
      </>
   }
   if(localStorage.getItem('rol') ==1 ){
-    
-  }if(localStorage.getItem('rol') == 0 ){
+    inicioSesion = <li><a href='/comprador/pedidos/'>Mis compras</a></li> 
+  }
+  if(localStorage.getItem('rol') ==3 ){
+    inicioSesion = <li><a href='/a-repartir'>A repartir</a></li>
+  }
+  if(!localStorage.getItem('rol') ){
      inicioSesion = <li><a href='/login'>Iniciar session</a></li>
   }
 
@@ -33,7 +39,7 @@ export function Header() {
           {//<li><a href='/nosotro'>Nosotros</a></li>
           }
           <li><a href='/signin'>¡Comencemos!</a></li>
-          <li><a href='/comprador/pedidos/'>Mis Pedidos</a></li> 
+           
           {inicioSesion}
         </ul>
       </nav>

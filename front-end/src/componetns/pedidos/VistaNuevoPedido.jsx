@@ -5,13 +5,14 @@ import { useParams } from 'react-router-dom';
 import { CardPlatillo } from '../CardPlatillo';
 import axios from 'axios';
 import {header} from '../../utils/heders';
-
+import "../../../public/css/vistaNuevoPedido.css"
 
 export function VistaPlatilloNuevoPedido (){
     let a = useParams();
     a = parseInt(a.id);
     const { register, handleSubmit } = useForm();
-    const baseURL = import.meta.env.VITE_LOCAL_SERVER+'/api/pedido/nuevo/'+a; 
+    const baseURL = import.meta.env.VITE_LOCAL_SERVER+'/api/platillos/'+a; 
+    const baseURL2 = import.meta.env.VITE_LOCAL_SERVER+'/api/pedido/nuevo/'+a; 
     const [platillo, setPlatillo] = React.useState(null);
     const conf = {
       headers:{
@@ -38,7 +39,7 @@ export function VistaPlatilloNuevoPedido (){
     pedidoData['idComprador'] = localStorage.getItem('miId')
     console.log(pedidoData)
     const token= localStorage.getItem('x-access-token')
-    const res = await axios.post(baseURL, userData,
+    const res = await axios.post(baseURL2, userData,
       {headers: {'x-access-token': token}}      
       )
     console.log(res.data)
@@ -55,7 +56,8 @@ const onSubmit = handleSubmit((data)=>{
     return<>
             <Header/>
 
-            <h1>vista nuevo pedido</h1>
+           <div className='Box'>
+              <h1>Confirmar pedido</h1>
             <div>
 
             <CardPlatillo platillos={platillo}/> 
@@ -82,7 +84,8 @@ const onSubmit = handleSubmit((data)=>{
                     }
                 })}/>
             <button class="botonround" type='submit'>Confirmar compra</button>
-            </form>
+            </form>  
+          </div> 
             
     </>
 }

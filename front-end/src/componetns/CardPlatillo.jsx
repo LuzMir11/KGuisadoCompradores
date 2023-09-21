@@ -19,15 +19,15 @@ export function CardPlatillo({platillos}) {
         </div>
         <div className='gentextcont'>
           <div className='text3cont'>
-            <h2 className='dataact alltextarticle'>+{platillo.Calificacion}</h2>
+            <h2 className='dataact alltextarticle'>+</h2>
             <p className='dataname alltextarticle'>Disponibles</p>
           </div>
           <div className='text3cont midtext'>
-            <h2 className='dataact alltextarticle'>3 min</h2>
-            <p className='dataname alltextarticle'>Llega en</p>
+            <h2 className='dataact alltextarticle'>$</h2>
+            <p className='dataname alltextarticle'>{platillo.Costos}</p>
           </div>
           <div className='text3cont'>
-            <h2 className='dataact alltextarticle'>⭐4.5</h2>
+            <h2 className='dataact alltextarticle'>⭐{platillo.Calificacion}</h2>
             <p className='dataname alltextarticle'>Calificación</p>
           </div>
         </div>

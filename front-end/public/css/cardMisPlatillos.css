@@ -1,0 +1,90 @@
+.card-Mis-Platillos{
+    background: #f3ac03;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 400px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius:20px ;
+}
+.card-Mis-Platillos > img{
+    border-radius: 10px;
+}
+.card-Mis-Platillos-info{
+    
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    justify-content: center;
+    padding-left: 10px;
+}
+.boxContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.eliminar-producto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 80px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.eliminar-producto:hover{
+    background: #000;
+    color: white;
+}
+
+
+
+
+.titleless {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    word-wrap: break-word;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.parrafou-m {
+    word-wrap: break-word;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

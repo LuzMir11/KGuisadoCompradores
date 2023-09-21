@@ -6,11 +6,35 @@
   box-sizing: border-box;
 }
 
+.contart{
+width: 100%;
+height: auto;
+}
+
+.imagenbaener{
+  width: 100%;
+  height: auto;
+}
+
+.centertext{
+  margin-top: 60px;
+}
+
 .titleless{
   word-wrap: break-word;
   font-family: 'Poppins', sans-serif;
   text-align: center;
   font-size: 40px;
+  color: black;
+}
+
+.textytitle{
+  flex: 1;
+  height: 100%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .parrafou{
@@ -18,14 +42,7 @@
   font-family: 'Nunito', sans-serif;
   text-align: center;
   font-size: 30px;
-}
-
-.textinp {
-  color: black;
-}
-
-.textpar {
- color: white;
+  margin-top: 2px;
 }
 
 .contaline{
@@ -50,7 +67,7 @@
   background-color: #f3ac03;
 }
 
-.conttextinp{
+.textytitle{
   flex: 1;
   height: 100%;
   padding: 5%;

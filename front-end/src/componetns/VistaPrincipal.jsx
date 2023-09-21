@@ -9,7 +9,7 @@ export function VistaPrincipal() {
     <div>
       <article className='contart contartinp'>
         <div className='contaline'>
-          <div className='contimginp'><UsuariosRegistrados/>
+          <div className='contimginp'>
             <img src="assets/comida.png" alt="imagen de comida" className='imgrecept'/>
           </div>
           <div className='conttextinp'>

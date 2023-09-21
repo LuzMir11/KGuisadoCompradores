@@ -59,9 +59,6 @@ const router = createBrowserRouter([
   {
     path:'/pedido/nuevo/:id',
     element:<VistaPlatilloNuevoPedido/>
-  },{
-    path:'/repartir/',
-    element:<Repartir/>  
   },
   //Paginas de información
   {
@@ -75,7 +72,12 @@ const router = createBrowserRouter([
   {
     path:'/nosotros',
     element:<><Header/>nosotros</> 
-  } 
+  },
+  //rutas de repartidores 
+  {
+    path:'/a-repartir',
+    element:<Repartir/>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

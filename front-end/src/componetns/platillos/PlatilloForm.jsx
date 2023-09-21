@@ -53,7 +53,7 @@ export function PlatilloForm(editarplatillo){
       localStorage.removeItem('rol')
     }
 
-    window.location.href="/"
+    window.location.href="/lista/platillos"
   }
 const onSubmit = handleSubmit((data)=>{
         userData = data

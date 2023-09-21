@@ -6,7 +6,7 @@ import axios from "axios";
 import { useParams, Link } from 'react-router-dom';
 import {header} from '../../utils/heders'
 import { Button } from "@mui/material";
-
+import "../../../public/css/vistaPlatillos.css"
 export function VistaPlatillo ( ){
   let a = useParams();
   a = parseInt(a.id);
@@ -31,12 +31,16 @@ export function VistaPlatillo ( ){
       });
     }, []);
     return (
+      <>
+        <Header/>
         <div className="vista_Platillos">
-            <Header/>
+            
             <CardPlatillo platillos={platillo} />
             <div className="">
             <Button onClick={redirect}>Comprar</Button>
             </div>
         </div> 
+      </>
+        
     )
 }
