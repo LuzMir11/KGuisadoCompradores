@@ -5,18 +5,19 @@ import { Header } from './Header';
 import axios from 'axios';
 export function InicioSesion() {
   const { register, handleSubmit } = useForm()
-  const linkApi = import.meta.env.VITE_ONLINE_SERVER+"/api/inicio-session-usuario";
+  const linkApi = import.meta.env.VITE_LOCAL_SERVER+"/api/inicio-session-usuario";
 
   let userData = {}
   let sendData = async (userData)=>{
     const res = await axios.post(linkApi, userData)
-    console.log(res.data)
+    console.log(res)
     if(res.data.message){
       console.log(res.data.message);
     }
     
     localStorage.setItem('x-access-token', res.data.token); 
-    localStorage.setItem('rol', res.data.rol)
+    localStorage.setItem('rol', res.data.rol);
+    localStorage.setItem('miId', res.data.idUsuario)
     
     window.location.href="/"
   }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../public/css/socialpage.css'
+import '../../../public/css/socialpage.css'
 
 export function SocialPage() {
 

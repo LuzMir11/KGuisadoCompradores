@@ -6,7 +6,7 @@ export function Registrarse (){
 
    return <>    
     <Header/>
-    <div><RegistrarseForm link={import.meta.env.VITE_ONLINE_SERVER+"/api/usuario"}/></div>
+    <div><RegistrarseForm link={import.meta.env.VITE_LOCAL_SERVER+"/api/usuario"}/></div>
     </>
 
 }

@@ -11,7 +11,7 @@ export function PlatilloForm(editarplatillo){
 
   
 
-  const linkApi = import.meta.env.VITE_ONLINE_SERVER+"/api/platillos/";
+  const linkApi = import.meta.env.VITE_LOCAL_SERVER+"/api/platillos/";
 
   let userData = {}
   const handleChange = (e) => {
@@ -103,7 +103,7 @@ const onSubmit = handleSubmit((data)=>{
               message: "La descripcion  del platillo debe contener almenos 5 caracteres"
             },
             maxLength:{
-              value: 100,
+              value: 300,
               message: "La descripcion  del platillo no debe contener mas de 45 caracteres"
             }
           })}/>
@@ -135,7 +135,7 @@ const onSubmit = handleSubmit((data)=>{
             <h3 className='infotext emailtext'>Precio de tu platillo:</h3>
           </div>
           <div className='info4cont infoin emailcont'>
-            <input type="number" className='NombreUsuario' placeholder="  60$" {...register("Precio",{
+            <input type="number" className='NombreUsuario' placeholder="  60$" {...register("Costos",{
              min: 0, max: 10000 
             })}/>
           </div>

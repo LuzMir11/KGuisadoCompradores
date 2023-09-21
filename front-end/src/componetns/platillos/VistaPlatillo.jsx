@@ -5,15 +5,21 @@ import {Header} from "../Header"
 import axios from "axios";
 import { useParams, Link } from 'react-router-dom';
 import {header} from '../../utils/heders'
+import { Button } from "@mui/material";
 
 export function VistaPlatillo ( ){
   let a = useParams();
-  const baseURL = import.meta.env.VITE_ONLINE_SERVER+'/api/platillos/'+a.id; 
+  a = parseInt(a.id);
+  
+  const baseURL = import.meta.env.VITE_LOCAL_SERVER+'/api/platillos/'+a; 
     const [platillo, setPlatillo] = React.useState(null);
     const conf = {
       headers:{
         "x-access-token": header()
       }
+    }
+    const redirect = ()=>{
+      window.location.href="/pedido/nuevo/"+a
     }
     React.useEffect(() => {
       //const token = localStorage.getItem('x-access-token')
@@ -25,11 +31,11 @@ export function VistaPlatillo ( ){
       });
     }, []);
     return (
-        <div className="boxPlatillos">
+        <div className="vista_Platillos">
             <Header/>
             <CardPlatillo platillos={platillo} />
             <div className="">
-              <Link to={"pedido/nuevo/"+a.id} >Comprar</Link>
+            <Button onClick={redirect}>Comprar</Button>
             </div>
         </div> 
     )

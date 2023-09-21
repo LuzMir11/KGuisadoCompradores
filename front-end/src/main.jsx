@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 
 /* Componentes */
+import { Header } from './componetns/Header';
 import { Main } from './componetns/Main';
 import {Platillos} from './componetns/Platillos';
 import { Registrarse } from './componetns/Registrarse';
@@ -13,11 +14,11 @@ import {InicioSesion} from './componetns/InicioSesion'
 import { VistaPlatillo } from './componetns/platillos/VistaPlatillo';
 import { Pedidos } from './componetns/proveedor/pedidos';
 import { Repartir } from './componetns/repartidores/Repartir';
-<<<<<<< HEAD
 import { NuevoPlatillo } from './componetns/platillos/NuevoPlatillo';
-=======
-import { SocialPage } from './componetns/SocialPage';
->>>>>>> main
+import { SocialPage } from './componetns/info/SocialPage';
+import { InfoPage } from './componetns/info/InfoPage';
+import { VistaPlatilloNuevoPedido } from './componetns/pedidos/VistaNuevoPedido';
+import { MisPlatillos } from './componetns/platillos/MisPlatillos';
 const router = createBrowserRouter([
   //rutas de ususario
   {
@@ -42,26 +43,39 @@ const router = createBrowserRouter([
     element:<VistaPlatillo/>
   },
   {
+    path:"/lista/platillos",
+    element:<MisPlatillos/>
+  },
+  {
     path:'nuevo/platillo',
     element: <NuevoPlatillo/> 
   },
   //Rutas de pedidos
   {
-    path:'/pedidos/',
+    //
+    path:'/comprador/pedidos/',
     element: <Pedidos/>
   },
   {
     path:'/pedido/nuevo/:id',
-    element:<></>
+    element:<VistaPlatilloNuevoPedido/>
   },{
     path:'/repartir/',
     element:<Repartir/>  
   },
   //Paginas de información
   {
-    path:'/Aprendermas',
+    path:'/aprendermas',
     element:<SocialPage/>
-  }
+  },
+  {
+    path:'/info',
+    element:<><Header/><InfoPage/></>
+  },
+  {
+    path:'/nosotros',
+    element:<><Header/>nosotros</> 
+  } 
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

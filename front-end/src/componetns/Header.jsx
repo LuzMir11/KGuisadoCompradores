@@ -7,9 +7,15 @@ import { InicioSesion } from './InicioSesion';
 
 export function Header() {
   let inicioSesion
-  if(localStorage.getItem('rol')==1){
-     inicioSesion = <li><a href='/nuevo/platillo'>Nuevo platillo</a></li>
-  }else{
+  if(localStorage.getItem('rol')==2){
+     inicioSesion = <>
+      <li><a href='/nuevo/platillo'>Nuevo platillo</a></li>
+      <li><a href='/lista/platillos'>Mis Platillos</a></li>
+     </>
+  }
+  if(localStorage.getItem('rol') ==1 ){
+    
+  }if(localStorage.getItem('rol') == 0 ){
      inicioSesion = <li><a href='/login'>Iniciar session</a></li>
   }
 
@@ -24,9 +30,10 @@ export function Header() {
         <ul>
         
           <li><a href='/info'>Información</a></li>
-          <li><a href='/nosotro'>Nosotros</a></li>
+          {//<li><a href='/nosotro'>Nosotros</a></li>
+          }
           <li><a href='/signin'>¡Comencemos!</a></li>
-          
+          <li><a href='/comprador/pedidos/'>Mis Pedidos</a></li> 
           {inicioSesion}
         </ul>
       </nav>

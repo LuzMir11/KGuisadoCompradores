@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../public/css/infopage.css'
+import '../../../public/css/infopage.css'
 
 export function InfoPage() {
 
